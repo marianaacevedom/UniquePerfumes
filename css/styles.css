@@ -1,0 +1,56 @@
+@import "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Oswald:wght@200..700&display=swap";
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 1200px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #F2F2F2;
+}
+body header {
+  padding: 1em;
+}
+body header nav ul li {
+  list-style-type: none;
+}
+body header nav ul li a {
+  color: #BF625A;
+  font-style: normal;
+  text-decoration: none;
+}
+body header nav ul li a:hover {
+  color: #D9AC9C;
+}
+body main {
+  padding: 1em;
+}
+body main h1 {
+  font-weight: 400;
+  font-size: 3em;
+  text-align: center;
+  font-style: normal;
+  color: #730217;
+}
+body main h2 {
+  padding: 1em;
+  font-weight: 400;
+  font-size: 1.5em;
+  text-align: left;
+  font-style: normal;
+  color: #BF625A;
+}
+body main div {
+  background-color: white;
+  margin: 1em;
+  padding: 1em;
+  width: 20em;
+}
+body main div h3 {
+  color: #D9AC9C;
+}
+body main div p {
+  color: #730217;
+}/*# sourceMappingURL=styles.css.map */
