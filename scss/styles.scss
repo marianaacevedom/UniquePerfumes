@@ -61,17 +61,20 @@ body {
             font-style: normal;
             color: $coral;
         }
-        div {
-            background-color: white;
-            margin: 1em;
-            padding: 1em;
-            width: 20em;
-            h3{
-                color: $salmon;
-            }
-            p{
-                color: $marron;
+        #perfumes {
+            div {
+                background-color: white;
+                margin: 1em;
+                padding: 1em;
+                width: 20em;
+                h3{
+                    color: $salmon;
+                }
+                p{
+                    color: $marron;
+                }
             }
         }
+        
     }
 }
