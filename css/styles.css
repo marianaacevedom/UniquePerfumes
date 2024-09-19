@@ -11,10 +11,18 @@ body {
   background-color: #F2F2F2;
 }
 body header {
+  display: block;
+  position: fixed;
   padding: 1em;
+  background-color: #BF625A;
+  width: 100%;
+}
+body header nav ul {
+  display: inline;
 }
 body header nav ul li {
   list-style-type: none;
+  display: inline;
 }
 body header nav ul li a {
   color: #BF625A;
@@ -33,6 +41,7 @@ body main h1 {
   text-align: center;
   font-style: normal;
   color: #730217;
+  margin-top: 1.5em;
 }
 body main h2 {
   padding: 1em;
@@ -42,15 +51,33 @@ body main h2 {
   font-style: normal;
   color: #BF625A;
 }
-body main div {
+body main #perfumes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body main #perfumes div {
+  display: flex;
+  flex-direction: column;
   background-color: white;
   margin: 1em;
   padding: 1em;
-  width: 20em;
+  width: 40%;
 }
-body main div h3 {
-  color: #D9AC9C;
+body main #perfumes div h3 {
+  color: #BF625A;
+  text-align: center;
+  margin: 1em;
 }
-body main div p {
+body main #perfumes div p {
+  text-align: left;
+}
+body main #perfumes div button {
   color: #730217;
+  padding: 2px;
+  margin-top: 1em;
+}
+body main #perfumes div img {
+  width: 50%;
 }/*# sourceMappingURL=styles.css.map */
