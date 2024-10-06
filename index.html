@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Unique es una tienda online de perfumes de mujer, hombre y unisex que ofrece envio dentro de las primeras 24hs.">
     <meta name="keywords" content="perfumería, fragancias, tienda online, perfumes de mujer, perfumes de hombre, perfumes unisex">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
     <link rel="stylesheet" href="./css/styles.css">
     <title>Document</title>
 </head>
@@ -13,31 +16,53 @@
         <nav>
             <ul>
                 <li>
-                    <button id="filtroTodos">Todos los perfumes</button>
+                    <button id="filtroTodos" class="btn btn-outline-secondary">Todos los perfumes</button>
                 </li>
                 <li>
-                    <button id="filtroHombre">Hombre</button>
+                    <button id="filtroHombre" class="btn btn-outline-secondary">Hombre</button>
                 </li>
                 <li>
-                    <button id="filtroMujer">Mujer</button>
+                    <button id="filtroMujer"class="btn btn-outline-secondary">Mujer</button>
                 </li>
-            </ul>
+            </ul> 
+            <a id="botonIconoCarrito" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path d="M16 6v-2c0-2.209-1.791-4-4-4s-4 1.791-4 4v2h-5v18h18v-18h-5zm-7-2c0-1.654 1.346-3 3-3s3 1.346 3 3v2h-6v-2zm10 18h-14v-14h3v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h6v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h3v14z"/></svg></a>
         </nav>
     </header>
     <main>
         <h1>Unique Perfumes</h1>
-        <h2>Perfumes</h2>
-        <form id="formSaludo">
-            <input type="text" id="nombreUsuario" placeholder="Ingresa tu nombre">
-            <button type="submit">Aceptar</button>
-        </form>
-        <p id="parrafoSaludo"></p>
-        <section id="perfumes">
-            </section>
-        <h3>Finalizar compra</h3>
-        <section id="carrito">
-        </section>
+        <h2>Descubre las fragancias de siempre al mejor precio</h2>
+        <div id="carrito">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Carrito de compra</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" >
+                    <div id="carrito-body" class="col-12">
+                    <!-- Productos añadidos al carrito -->
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-danger" id="vaciarCarrito">
+                            Vaciar carrito
+                        </button>
+                    </div>
+                    <div>
+                        <button class="btn btn-success mt-3" type="button" id="finalizarCompra">
+                            Finalizar compra
+                        </button>
+                    </div>
+                    <div id="formularioContainer"></div>
+                </div>
+            </div>
+        </div>
+        <div id="perfumes">
+            </div>
     </main>
+    <footer class="py-3 my-4">
+        <p class="text-center text-muted">© 2024 Mariana Acevedo</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/app.js"></script>
 </body>
 </html>

@@ -3,39 +3,63 @@
   margin: 0 auto;
   box-sizing: border-box;
   min-width: 0;
-  max-width: 1200px;
+  max-width: 1400px;
 }
 
-body {
+html {
   font-family: "Lato", sans-serif;
+}
+html body {
   background-color: #F2F2F2;
 }
-body header {
+html body header {
   display: block;
   position: fixed;
   padding: 1em;
-  background-color: #BF625A;
+  background-color: #F2F2F2;
   width: 100%;
 }
-body header nav ul {
+html body header nav ul {
   display: inline;
 }
-body header nav ul li {
+html body header nav ul .btn-outline-secondary {
+  color: #730217;
+  border-color: #730217;
+}
+html body header nav ul .btn-outline-secondary:hover {
+  color: #F2F2F2;
+  background-color: #BF625A;
+  border-color: #BF625A;
+}
+html body header nav ul li {
   list-style-type: none;
   display: inline;
 }
-body header nav ul li a {
-  color: #BF625A;
-  font-style: normal;
-  text-decoration: none;
+html body header nav #botonIconoCarrito {
+  position: absolute;
+  right: 0;
+  margin-right: 5em;
+  border: none;
+  background-color: none;
 }
-body header nav ul li a:hover {
-  color: #D9AC9C;
+html body header nav #botonIconoCarrito:hover {
+  background-color: none;
+  border-color: #BF625A;
 }
-body main {
+html body header nav #botonIconoCarrito svg {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  fill: #730217;
+}
+html body header nav #botonIconoCarrito svg:hover {
+  fill: #BF625A;
+  transform: scale(1.2);
+}
+html body main {
   padding: 1em;
 }
-body main h1 {
+html body main h1 {
   font-weight: 400;
   font-size: 3em;
   text-align: center;
@@ -43,41 +67,76 @@ body main h1 {
   color: #730217;
   margin-top: 1.5em;
 }
-body main h2 {
+html body main h2 {
   padding: 1em;
   font-weight: 400;
   font-size: 1.5em;
-  text-align: left;
+  text-align: center;
   font-style: normal;
   color: #BF625A;
 }
-body main #perfumes {
+html body main #perfumes {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  width: 80%;
 }
-body main #perfumes div {
+html body main #perfumes div {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: white;
   margin: 1em;
-  padding: 1em;
-  width: 40%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 30%;
 }
-body main #perfumes div h3 {
+html body main #perfumes div:hover {
+  transform: scale(1.1);
+}
+html body main #perfumes div h3 {
   color: #BF625A;
   text-align: center;
+  font-size: larger;
   margin: 1em;
 }
-body main #perfumes div p {
+html body main #perfumes div p {
   text-align: left;
+  margin: 0;
 }
-body main #perfumes div button {
-  color: #730217;
+html body main #perfumes div .btn-outline-success {
+  width: 50%;
   padding: 2px;
   margin-top: 1em;
 }
-body main #perfumes div img {
-  width: 50%;
+html body main #perfumes div img {
+  width: 70%;
+}
+html body footer {
+  background-color: white;
+}
+html body .offcanvas {
+  text-align: left;
+}
+html body .offcanvas .offcanvas-header .btn-close {
+  height: 0.5em;
+  width: 0.5em;
+}
+html body .offcanvas .offcanvas-header .offcanvas-title {
+  text-align: left;
+  color: #BF625A;
+}
+html body .offcanvas .offcanvas-body #carrito-body {
+  padding: 0em;
+  font-size: 1em;
+}
+html body .offcanvas .offcanvas-body #carrito-body div {
+  padding: 1em;
+}
+html body .offcanvas .offcanvas-body #carrito-body div h4 {
+  font-size: 1em;
+}
+html body .offcanvas .offcanvas-body #formCompra {
+  margin-top: 1em;
 }/*# sourceMappingURL=styles.css.map */

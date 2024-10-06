@@ -6,8 +6,6 @@ $coral: #BF625A;
 
 $font: "Lato", sans-serif;
 
-$background: #F2F2F2;
-
 $font-weights: (
     "regular": 400,
     "medium": 500,
@@ -19,83 +17,143 @@ $font-weights: (
 	margin: 0 auto;
 	box-sizing: border-box;
 	min-width: 0;
-	max-width: 1200px;
+	max-width: 1400px;
 }
-
-body {
+html {
     font-family: $font;
-    background-color: $background;
-    header {
-        display: block;
-        position: fixed;
-        padding: 1em;
-        background-color: $coral;
-        width: 100%;
-        nav {
-            ul {
-                display: inline;
-                li{
-                    list-style-type: none;
+    body {
+        background-color: $gris;
+        header {
+            display: block;
+            position: fixed;
+            padding: 1em;
+            background-color: $gris;
+            width: 100%;
+            nav {
+                ul {
                     display: inline;
-                    a {
-                        color:#BF625A;
-                        font-style: normal;
-                        text-decoration: none;
+                    .btn-outline-secondary {
+                        color: $marron;
+                        border-color: $marron;
                         &:hover {
-                            color: $salmon;
+                            color: $gris;
+                            background-color: $coral;
+                            border-color: $coral;
+                        }
+                    }
+                    li{
+                        list-style-type: none;
+                        display: inline;
+                    }
+                }
+                #botonIconoCarrito {
+                    position: absolute;
+                    right: 0;
+                    margin-right: 5em;
+                    border: none;
+                    background-color: none;
+                    &:hover {
+                        background-color: none;
+                        border-color: $coral;
+                    }
+                    svg {
+                        width: 40px;
+                        height: 40px;
+                        padding: 0;
+                        fill: $marron;
+                        &:hover {
+                            fill: $coral;
+                            transform: scale(1.2);
                         }
                     }
                 }
             }
         }
-        
-    }
-    main {
-        padding: 1em;
-        h1 {
-            font-weight: map-get($font-weights, regular);
-            font-size: 3em;
-            text-align: center;
-            font-style: normal;
-            color: $marron;
-            margin-top: 1.5em;
-        }
-        h2{
+        main {
             padding: 1em;
-            font-weight: map-get($font-weights, regular);
-            font-size: 1.5em;
-            text-align: left;
-            font-style: normal;
-            color: $coral;
-        }
-        #perfumes {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            div {
-                display: flex;
-                flex-direction: column;
-                background-color: white;
-                margin: 1em;
+            h1 {
+                font-weight: map-get($font-weights, regular);
+                font-size: 3em;
+                text-align: center;
+                font-style: normal;
+                color: $marron;
+                margin-top: 1.5em;
+            }
+            h2{
                 padding: 1em;
-                width: 40%;
-                h3 {
-                    color: $coral;
-                    text-align: center;
+                font-weight: map-get($font-weights, regular);
+                font-size: 1.5em;
+                text-align: center;
+                font-style: normal;
+                color: $coral;
+            }
+            #perfumes {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 80%;
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background-color: white;
                     margin: 1em;
+                    padding-top: 1em;
+                    padding-bottom: 1em;
+                    width: 30%;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                    h3 {
+                        color: $coral;
+                        text-align: center;
+                        font-size: larger;
+                        margin: 1em;
+                    }
+                    p {
+                        text-align: left;
+                        margin: 0;
+                    }
+                    .btn-outline-success {
+                        width: 50%;
+                        padding: 2px;
+                        margin-top: 1em;
+                    }
+                    img{
+                        width: 70%;
+                    }
                 }
-                p {
+            }
+        }
+        footer {
+            background-color: white;
+        }
+        .offcanvas {
+            text-align: left;
+            .offcanvas-header {
+                .btn-close {
+                    height: 0.5em;
+                    width: 0.5em;
+                }
+                .offcanvas-title {
                     text-align: left;
-                    
+                    color: $coral
                 }
-                button {
-                    color: $marron;
-                    padding: 2px;
+            }
+            .offcanvas-body {
+                #carrito-body {
+                padding: 0em;
+                font-size: 1em;
+                    div {
+                        padding: 1em;
+                        h4 {
+                            font-size: 1em;
+                        }
+                    }
+                }
+                #formCompra {
                     margin-top: 1em;
-                }
-                img{
-                    width: 50%;
                 }
             }
         }
